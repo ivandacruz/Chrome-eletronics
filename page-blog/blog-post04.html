@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--================= favicon ============ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/image/shortcut.png" width="3px" />
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/colors/color-1.css">
+
+    <title>Chrome | Eletronics</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">
+                <i class="bx bxl-mailchimp nav__logo-icon"></i>
+                Chrome | Eletronics
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link ">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../blog.html" class="nav__link active-link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- include toggler nav bar -->
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">R$ 120</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">R$ 160</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon Crush</h3>
+                    <span class="cart__price">R$ 100</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">R$ 28</span>
+        </div>
+    </div>
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action class="login__form grid">
+            <div class="login__content">
+                <label for class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div>
+                <a href="#" class="button"> Sign in</a>
+            </div>
+            <div>
+                <p class="signup">Not a member? <a href="../registration.html">Sign
+                        up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== BLOG ===============-->
+        <section class="blog section container">
+            <h2 class="breadcrumb__title">Página do Blog</h2>
+            <h3 class="breadcrumb__subtitle">
+                <a class="button--link button--flex" href="../blog.html">Blog</a> > <span>Cibersegurança</span>
+            </h3>
+
+            <div class="blog__container grid">
+                <h3 class="breadcrumb__title">Cibersegurança para pequenas empresas</h3>
+                <img class="blog__img" src="https://i0.wp.com/terabyte.com.br/wp-content/uploads/2023/07/Imagem1-1.jpg?resize=602%2C444&ssl=1" alt="">
+                <p class="blog__date">Por: Pedro Paulo | Set 03,2023 | Governança em TI </p>
+                
+                <div class="blog__post ">
+                    <div class="blog__text">
+                        <p class="hero__text">
+                            A cibersegurança é um conjunto de práticas, medidas e estratégias adotadas para proteger sistemas, 
+                            redes, dispositivos e dados contra ameaças cibernéticas. Com o avanço da tecnologia e a crescente 
+                            dependência da internet, ela se tornou fundamental para garantir a confidencialidade, integridade e 
+                            disponibilidade das informações e recursos digitais. 
+                        </p>  
+                        <p class="hero__text">
+                            Veja no texto a seguir como ela é feita, como seu uso pode ser importante, por onde começar e a sua 
+                            importância em negócios de pequeno porte.
+                        </p>
+                        <h3 class="blog__title">Segurança no seu negócio</h3>
+                        <p class="hero__text">
+                            Em pequenas empresas, a cibersegurança é igualmente importante, apesar de muitas vezes ser negligenciada 
+                            devido a recursos limitados e falta de conscientização. No entanto, essas empresas também estão suscetíveis 
+                            a ataques cibernéticos, e as consequências podem ser devastadoras. Além do comprometimento dos dados dos 
+                            clientes e parceiros, os incidentes de segurança podem resultar em perda financeira, danos à reputação e 
+                            interrupção das operações.
+
+                        </p>
+                        <p class="hero__text">
+                            Existem várias razões pelas quais é crucial utilizar medidas de cibersegurança em marcas de pequeno porte. 
+                            Primeiramente, os cibercriminosos muitas vezes veem essas empresas como alvos fáceis, acreditando ter uma 
+                            postura de segurança mais frágil em comparação com grandes corporações. Isso ocorre porque acreditam que 
+                            essas empresas possuem menos recursos dedicados à segurança cibernética e podem não possuir a experiência 
+                            necessária para lidar com ameaças sofisticadas.
+
+                        </p>
+                        <p class="hero__text">
+                            Além disso, as pequenas empresas são frequentemente parte de uma cadeia de suprimentos maior, e a falta de 
+                            medidas de segurança adequadas pode torná-las um elo fraco dessa cadeia. Se um atacante conseguir comprometer 
+                            a segurança de uma pequena empresa, ele pode usar essa entrada para acessar outras organizações relacionadas, 
+                            causando danos em cascata.
+
+                        </p>
+                        <p class="hero__text">
+                            Outro motivo essencial é a proteção dos dados dos clientes. Essas marcas menores geralmente lidam com informações 
+                            sensíveis, como dados pessoais, detalhes financeiros e informações comerciais confidenciais. A perda ou vazamento 
+                            desses dados pode levar a processos legais, multas significativas e danos à reputação. A cibersegurança adequada 
+                            é essencial para proteger essas informações e manter a confiança dos clientes.
+
+                        </p>
+
+                    </div>
+
+                    <h3 class="blog__title">Processo de implementação</h3>
+                    <img class="blog__img" src="https://www.nationalretail.org.au/app/uploads/2023/10/StockImages_01-800x520.jpg" alt="">
+                    <div class="blog__text">
+                        <br>
+                        <p class="hero__text">
+                            Primeiramente, é importante criar uma cultura de segurança, conscientizando todos os funcionários sobre a importância da cibersegurança e fornecer treinamentos regulares para identificar ameaças e adotar boas práticas de segurança. Isso inclui a criação de senhas fortes, evitar o compartilhamento de informações confidenciais por e-mail não criptografado e estar atento a possíveis golpes de engenharia social.
+                        </p>
+
+                        <p class="hero__text">
+                            Além disso, é fundamental manter os sistemas e softwares atualizados, pois as atualizações frequentes geralmente incluem correções de segurança. Utilizar firewalls e antivírus confiáveis, bem como implementar a autenticação em dois fatores, também é essencial para proteger os sistemas e redes contra invasões e acessos não autorizados.
+                        </p>
+                        
+                        <p class="hero__text">
+                            Outra medida importante é realizar backups regulares dos dados e garantir que essas cópias estejam armazenadas em locais seguros e separados dos sistemas principais. Isso pode ajudar a minimizar o impacto de ataques de ransomware ou falhas de hardware.
+                        </p>
+                        
+                        <p class="hero__text">
+                            Por fim, é altamente recomendado buscar o apoio de especialistas em cibersegurança. Contratar profissionais qualificados ou empresas de segurança cibernética pode fornecer a experiência necessária para avaliar os riscos, implementar medidas adequadas de proteção e fornecer suporte contínuo.
+                        </p>
+                        
+                        <p class="hero__text">
+                            A Terabyte conta com um time de especialistas no assunto que pode te ajudar nesse momento. Entre em contato e saiba mais. Para mais dicas de segurança e informações importantes, acesse as nossas redes sociais: @terabyte.ti.
+                        </p>
+                        <br>
+                    </div> 
+
+                    <div class="blog__text">
+                        <h3 class="blog__title">Desafios que as empresas enfrentam </h3>
+                        <p class="hero__text">
+                            Agora, vamos explorar os desafios que as empresas enfrentam ao evitar o investimento em computação em nuvem:
+                        </p>
+                        <br>
+                        <h3 class="blog__title">1. Falta de competitividade</h3>
+                        <p class="hero__text">
+                            Empresas que não adotam a nuvem podem perder competitividade, uma vez que não conseguem acompanhar 
+                            a agilidade e inovação das concorrentes que o fazem.
+                        </p>
+                        <h3 class="blog__title">2.Riscos de segurança</h3>
+                        <p class="hero__text">
+                            Manter dados e aplicativos em servidores locais pode aumentar os riscos de segurança, pois os provedores 
+                            de nuvem oferecem geralmente medidas de segurança mais avançadas.
+                        </p>
+                        <br>
+                        <h3 class="blog__title">3. Altos custos operacionais</h3>
+                        <p class="hero__text">
+                            A manutenção de infraestruturas locais pode ser dispendiosa em termos de despesas operacionais, 
+                            incluindo energia, refrigeração e manutenção.
+                        </p>
+                        <br>
+                        <h3 class="blog__title">4. Complexidade de gerenciamento</h3>
+                        <p class="hero__text">
+                            À medida que as operações crescem, a gestão de infraestrutura local pode se tornar complexa 
+                            e exigir mais recursos de TI.
+                        </p>
+                        <br>
+                        <h3 class="blog__title">5. Falta de flexibilidade</h3>
+                        <p class="hero__text">
+                            A falta de escalabilidade e flexibilidade das infraestruturas locais podem impedir o 
+                            crescimento e a adaptação a mudanças no mercado.
+                        </p>
+                    </div>
+
+                    <div class="blog__text">
+                        <h3 class="blog__title">Como superar esses desafios?</h3>
+                        <p class="hero__text">
+                            Superar os desafios da não adoção da nuvem envolve uma transição planejada e estratégica. 
+                            Aqui estão algumas etapas essenciais: 
+                        </p>  
+
+                        <h3 class="blog__title">1. Educação e treinamento</h3>
+                        <p class="hero__text">
+                            Garanta que sua equipe esteja bem informada sobre os benefícios da nuvem e como utilizá-la efetivamente.
+                        </p>
+
+                        <h3 class="blog__title">2. Avaliação de segurança</h3>
+                        <p class="hero__text">Implemente medidas de segurança robustas para proteger dados e aplicativos, mesmo na nuvem.</p>
+                        
+                        <h3 class="blog__title">3. Migração gradual</h3>
+                        <p class="hero__text">Considere uma migração faseada, movendo aplicativos e dados críticos para a nuvem gradualmente.</p>
+                        
+                        <h3 class="blog__title">4. Parceria com especialistas</h3>
+                        <p class="hero__text">Trabalhe com provedores de serviços em nuvem e consultores especializados para orientação durante a transição.</p>
+                        
+                        <h3 class="blog__title">5. Acompanhamento continuo</h3>
+                        <p class="hero__text">Monitore e otimize constantemente sua infraestrutura em nuvem para garantir eficiência e segurança.</p>
+                        
+                        <p class="hero__text">
+                            Para superar esses desafios, é essencial que as empresas considerem seriamente 
+                            a migração para a nuvem e trabalhem com parceiros de confiança, como a Terabyte. 
+                            Nós oferecemos serviços de nuvem confiáveis e soluções sob medida para atender às 
+                            necessidades exclusivas de sua empresa. Não deixe que a falta de investimento em 
+                            nuvem limite o potencial de crescimento de sua organização. Entre em contato conosco e 
+                            descubra como podemos ajudar você a aproveitar ao máximo os benefícios da computação em nuvem.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1-->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxl-mailchimp footer__logo-icon"></i>
+                    Chrome | Eletronics
+                </a>
+                <p class="footer__description">Aproveite a maior venda <br>
+                    da sua vida.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Sobre Nós</a></li>
+                    <li><a href="#" class="footer__link">Suporte ao cliente</a></li>
+                    <li><a href="../politica.html" class="footer__link">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nosso Serviço</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Comprar</a></li>
+                    <li><a href="#" class="footer__link">Desconto</a></li>
+                    <li><a href="#" class="footer__link">Modo de entrega</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nossa Companhia</h3>
+                <ul class="footer__links">
+                    <li><a href="../registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="../contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="../about.html" class="footer__link">Sobre nós
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169;<span class="footer__copy-autor">Chrome | Eletronicsv</span>.
+            Todos direitos reservados</span>
+    </footer>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+    </a>
+
+    <!--=============== STYLE SWITCHER ===============-->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
