@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--================= Favicon ============ -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/mailchimp.png" width="3px" />
+
+    <!--=============== Boxicons ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!--======= Swiper Css =========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--======== Css ========-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" class="js-color-style" href="assets/css/colors/color-1.css" />
+
+    <title>Chrome | Eletronics </title>
+</head>
+
+<body class="">
+    <!--=============== HEADER ===============-->
+    <header class="header " id="header">
+        <nav class="nav container ">
+            <a href="index.html" class="nav__logo ">
+                <i class="bx bxl-mailchimp nav__logo-icon"></i>
+                Chrome | Eletronics
+            </a>
+
+            <div class="nav__menu " id="nav-menu">
+                <ul class="nav__list ">
+                    <li class="nav__item ">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- includ toggler nav bar -->
+            <div class="nav__btns">
+                <div class="login__toggle " id="login-button">
+                    <i class="bx bx-user "></i>
+                </div>
+                <div class="nav__shop " id="cart-shop">
+                    <i class="bx bx-shopping-bag "></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt "></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">R$ 120</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">R$ 160</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon Crush</h3>
+                    <span class="cart__price">R$ 100</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">R$ 28</span>
+        </div>
+    </div>
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div>
+                <a href="#" class="button"> Sign in</a>
+            </div>
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home container">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SWIPER 1  -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img class="home__img" src="assets/imagens/img-02/marshal-phone.png" alt="">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">The "Marshall"</h4>
+                                    <span class="home__details-subtitle">Som Suave e anti ruido</span>
+                                </div>
+                            </div>
+                            <div class="home__data ">
+                                <h3 class="home__subtitle">#1 ITEM DE LUXO</h3>
+                                <h1 class="home__title">POTÊNCIA E <br> SUPER BATERIA!!</h1>
+                                <p class="home__description">Conheça Major IV, os fones de ouvido icônicos
+                                    da Marshall com mais de 80 horas de reprodução sem fio, carregamento
+                                    sem fio e um design ergonômico.</p>
+                                <div class="home__buttons">
+                                    <a class="button" href="details1.html">Comprar agora</a>
+
+                                    <a class=" button--flex button--link" href="details1.html">Ver detalhes
+                                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SWIPER 2  -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img class="home__img"
+                                    src="https://www.masterdbsound.com.br/wp-content/uploads/2021/01/SRH840-1.png"
+                                    alt="">
+                                <!-- <img class="home__img" src="assets/images/female/slide-1.png" alt=""> -->
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">"Shure SRH840"</h4>
+                                    <span class="home__details-subtitle">Confortable and Profissional</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#2 ITEM PROFISSIONAL</h3>
+                                <h1 class="home__title">SALE 20% <br> OFF ON <br>EVERYTHING</h1>
+                                <p class="home__description">
+                                    Fone de ouvido de monitoramento profissional SRH840 oferece resposta
+                                    de frequência precisamente ajustada que garante graves intensos, médios
+                                    claros e precisão nos agudos.</p>
+                                <div class="home__buttons">
+                                    <a class="button" href="details2.html">Comprar agora</a>
+                                    <a class="button--link button--flex" href="details2.html">Ver detalhes
+                                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SWIPER 3  -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img class="home__img"
+                                    src="https://www.jbl.com.br/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw1da9c19d/JBL_QUANTUM_610_Product%20Image_Hero_CES.png?sw=535&sh=535"
+                                    alt="">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">JBL Quantum 610 Wireless</h4>
+                                    <span class="home__details-subtitle">Som Super Estério</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#3 O MAIS VENDIDO</h3>
+                                <h1 class="home__title">Quantum <br> SURROUND™ <br>e DTS </h1>
+                                <p class="home__description">Coloque a cabeça no jogo. Mergulhe em uma
+                                    experiência épica e aproveite o som que explode de todas as direções,
+                                    graças ao JBL QuantumSURROUND.
+                                </p>
+                                <div class="home__buttons">
+                                    <a class="button" href="details3.html">Comprar agora</a>
+                                    <a class="button--link button--flex" href="details3.html">Ver detalhes
+                                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- HOME SWIPER 4  -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img class="home__img"
+                                    src="https://m.media-amazon.com/images/I/516W6XqY3iL.__AC_SX300_SY300_QL70_ML2_.jpg"
+                                    alt="">
+                                <div class="home__indicator"></div>
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">Redragon MINOS H210</h4>
+                                    <span class="home__details-subtitle">A mais alta Qualidade em áudio</span>
+                                </div>
+                            </div>
+                            <div class="home__data">
+                                <h3 class="home__subtitle">#4 O MAIS INDICADO PARA JOGOS</h3>
+                                <h1 class="home__title">Redragon <br> MINOS H210 <br>Super</h1>
+                                <p class="home__description">Alto conforto e capacidade em áudio com a mais avançada
+                                    técnologia do mercado
+                                    em áudio SURROUND que isola o ambiente de jogo.
+                                </p>
+                                <div class="home__buttons">
+                                    <a class="button" href="details4.html">Comprar agora</a>
+                                    <a class="button--link button--flex" href="details4.html">Ver detalhes
+                                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== DISCOUNT ===============-->
+        <section class="discount section">
+            <div class="discount__container container grid">
+                <img src="assets/imagens/img-02/wall-02.png" alt="" class="discount__img">
+                <!-- <img src="assets/images/discount/discount.png" alt="" class="discount__img"> -->
+                <div class="discount__data">
+                    <h2 class="discount__title">30% Discontos <br> Em novos produtos</h2>
+                    <a href="Product-new.html" class="button">Ir para novo</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEW ARRIVALS ===============-->
+        <section class="new section">
+            <h2 class="section__title">Novos Produtos</h2>
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- NEW CONTENT 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-e-caixa-01.png" alt="">
+                            <h3 class="new__title">Jacketa Windbreaker</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 65.00</span>
+                                <span class="new__discount">R$ 100.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 2 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-01.png" alt="">
+                            <!-- <img class="new__img" src="assets/images/new/new-2.png" alt=""> -->
+                            <h3 class="new__title">Air Jordan Zipper</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 175.00</span>
+                                <span class="new__discount">R$ 245.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 3 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-02.png" alt="">
+                            <h3 class="new__title">Jacketa Fur</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 155.00</span>
+                                <span class="new__discount">R$ 200.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 4 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-03.png" alt="">
+                            <h3 class="new__title">Jacketa Fleece</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 185.00</span>
+                                <span class="new__discount">R$ 225.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 5 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-04.png" alt="">
+                            <h3 class="new__title">Nike Hoodie</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 85.00</span>
+                                <span class="new__discount">R$ 135.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 6 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-05.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 7 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-02.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 8 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-03.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 9 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-04.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 10 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img"
+                                src="https://http2.mlstatic.com/D_NQ_NP_719727-MLU72573233972_112023-O.webp" alt="">
+                            <h3 class="new__title">Placa de vídeo Nvidia Galax EX Plus GeForce GTX 16 Series GTX 1650
+                                65SQL8DS93E1 4GB</h3>
+                            <span class="new__subtitle">Acessorios | Placa-Video</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 820.00</span>
+                                <span class="new__discount">R$ 80.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 9 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img"
+                                src="https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/studio-buds-plus/plp/plp-studiobudsplus-transparent.jpg.large.2x.jpg"
+                                alt="">
+
+                            <h3 class="new__title">Beats Studio Buds +</h3>
+                            <span class="new__subtitle">Acessorios | Fones</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 1200.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <h2 class="section__title">Fones</h2> -->
+            <div class="new__container container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- NEW CONTENT 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-e-caixa-01.png" alt="">
+                            <h3 class="new__title">Jacketa Windbreaker</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 65.00</span>
+                                <span class="new__discount">R$ 100.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 2 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-01.png" alt="">
+                            <h3 class="new__title">Air Jordan Zipper</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 175.00</span>
+                                <span class="new__discount">R$ 245.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 3 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-02.png" alt="">
+                            <h3 class="new__title">Jacketa Fur</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 155.00</span>
+                                <span class="new__discount">R$ 200.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 4 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-03.png" alt="">
+                            <h3 class="new__title">Jacketa Fleece</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 185.00</span>
+                                <span class="new__discount">R$ 225.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 5 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-04.png" alt="">
+                            <h3 class="new__title">Nike Hoodie</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 85.00</span>
+                                <span class="new__discount">R$ 135.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 6 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-mae-05.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 7 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-02.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 8 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-03.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 9 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img" src="assets/imagens/img-02/placa-video-e-caixa-04.png" alt="">
+                            <h3 class="new__title">Jacketa Hoodie Duo</h3>
+                            <span class="new__subtitle">Acessorios</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 120.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 10 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img"
+                                src="https://http2.mlstatic.com/D_NQ_NP_719727-MLU72573233972_112023-O.webp" alt="">
+                            <h3 class="new__title">Placa de vídeo Nvidia Galax EX Plus GeForce GTX 16 Series GTX 1650
+                                65SQL8DS93E1 4GB</h3>
+                            <span class="new__subtitle">Acessorios | Placa-Video</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 820.00</span>
+                                <span class="new__discount">R$ 80.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                        <!-- NEW CONTENT 9 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">Novo</div>
+                            <img class="new__img"
+                                src="https://www.beatsbydre.com/content/dam/beats/web/product/earbuds/studio-buds-plus/plp/plp-studiobudsplus-transparent.jpg.large.2x.jpg"
+                                alt="">
+
+                            <h3 class="new__title">Beats Studio Buds +</h3>
+                            <span class="new__subtitle">Acessorios | Fones</span>
+                            <div class="new__prices">
+                                <span class="new__price">R$ 1200.00</span>
+                                <span class="new__discount">R$ 180.00</span>
+                            </div>
+
+                            <a href="details.html" class="button new__button">
+                                <i class="bx bx-cart-alt new__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== STEPS ===============-->
+        <section class="steps section container">
+            <div class="steps__bg">
+                <h2 class="section__title">Perguntas Frequentes <br> no Chrome | Eletronics
+                </h2>
+                <div class="steps__container grid">
+                    <!-- STEP CARD 1 -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">01</div>
+                        <h3 class="steps__card-title">Pagamento, preços e promoções</h3>
+                        <p class="steps__card-description">
+                            Quero saber mais sobre produtos, promoções e como pagar meus produtos.
+                        </p>
+                        <div class="home__buttons">
+                            <a class="button--link button--flex" href="pagamentos-precos-promocoes.html">Saiba Mais
+                                <i class="bx bx-right-arrow-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- STEP CARD 2 - Devolução e Reembolso -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">02</div>
+                        <h3 class="steps__card-title">Devolução e Reembolso</h3>
+                        <p class="steps__card-description">
+                            Quando você devolve um produto enviado, o reembolso é emitido de acordo com a forma de
+                            pagamento usada no momento da compra.
+                        </p>
+                        <div class="home__buttons">
+                            <a class="button--link button--flex" href="Devolucao.html">Saiba Mais
+                                <i class="bx bx-right-arrow-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- STEP CARD 3 - Entregas em Atraso -->
+                    <div class="steps__card">
+                        <div class="steps__card-number">03</div>
+                        <h3 class="steps__card-title">Entregas em Atraso</h3>
+                        <p class="steps__card-description">
+                            Se seu pedido está em atraso por favor entre em nossa página de entregas em atraso que
+                            iremos orientar
+                            e informar melhor sobre seu produto em atraso.
+                        </p>
+                        <div class="home__buttons">
+                            <a class="button--link button--flex" href="Atraso.html">Saiba Mais
+                                <i class="bx bx-right-arrow-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== NEWSLETTER ===============-->
+        <section class="newsletter section">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Nossa Newsletter</h2>
+                <p class="newsletter__description">
+                    Promoção de novos produtos e vendas. Diretamente para sua caixa de e-mail
+                </p>
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Seu e-mail" class="newsletter__input">
+                    <button class="button">Assinar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1-->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxl-mailchimp footer__logo-icon"></i>
+                    Chrome | Eletronics
+                </a>
+                <p class="footer__description">Aproveite a maior venda <br> da sua vida.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre</h3>
+
+                <ul class="footer__links">
+                    <li><a href="termos.html" class="footer__link">Termos e condições</a></li>
+                    <li><a href="#" class="footer__link">Suporte ao cliente</a></li>
+                    <li><a href="politica.html" class="footer__link">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nosso Serviço</h3>
+                <ul class="footer__links">
+                    <li><a href="como-comprar.html" class="footer__link">Como Comprar</a></li>
+                    <li><a href="#" class="footer__link">Desconto</a></li>
+                    <li><a href="Formas-pagamento.html" class="footer__link">Formas de Pagamento</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nossa Companhia</h3>
+                <ul class="footer__links">
+                    <li><a href="registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="about.html" class="footer__link">Sobre nós </a></li>
+                </ul>
+            </div>
+        </div>
+
+                                    <!--  estilizar  Chrome | Eletronics  com um hover translateY-->        
+        <span class="footer__copy">&#169;<span class="footer__copy-autor">Chrome | Eletronics</span>. Todos direitos
+            reservados</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+    </a>
+
+
+    <!--=============== Style Switcher ===============-->
+    <div class="style__switcher ">
+        <div class="style__switcher-toggler s__icon">
+            <i class="bx bxs-cog bx-spin"></i>
+        </div>
+
+        <!-- ----- theme color -----  -->
+        
+        <div class="day-night s-icon">
+            <i class="bx bxs-sun"></i>
+        </div>
+        <h4 class="">Theme Colors</h4>
+        <div class="theme__colors js-theme-colors">
+            <button class="js-theme-color-item theme__button color-1 " type="button" data-js-theme-color="color-1">
+                <i class="bx bx-check"></i>
+            </button>
+            <button class="js-theme-color-item theme__button color-2" type="button" data-js-theme-color="color-2"><i
+                    class="bx bx-check"></i></button>
+            <button class="js-theme-color-item theme__button color-3" type="button" data-js-theme-color="color-3"><i
+                    class="bx bx-check"></i></button>
+            <button class="js-theme-color-item theme__button color-4" type="button" data-js-theme-color="color-4"><i
+                    class="bx bx-check"></i></button>
+            <button class="js-theme-color-item theme__button color-5" type="button" data-js-theme-color="color-5"><i
+                    class="bx bx-check"></i></button>
+        </div>
+    </div>
+    
+
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
