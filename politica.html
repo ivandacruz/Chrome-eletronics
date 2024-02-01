@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--================= favicon ============ -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/mailchimp.png" width="3px" />
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <title>Chrome | Eletronics</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxl-mailchimp nav__logo-icon"></i>
+                Chrome | Eletronics
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link active-link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- include toggler nav bar -->
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">R$ 120</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">R$ 160</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt>
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon Crush</h3>
+                    <span class="cart__price">R$ 100</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">R$ 28</span>
+        </div>
+    </div>
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action class="login__form grid">
+            <div class="login__content">
+                <label for class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div>
+                <a href="#" class="button"> Sign in</a>
+            </div>
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign
+                        up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== BLOG ===============-->
+        <section class="blog section container">
+            <!-- <h2 class="breadcrumb__title">Página Política de Privacidade</h2> -->
+            <h3 class="breadcrumb__subtitle">
+                <a class="button--link button--flex" href="index.html">Home</a> > <span>Política de Privacidade</span>
+            </h3>
+
+            <div class="blog__container grid">
+                <h3 class="breadcrumb__title">Nossa Política de privacidade</h3>
+                <img class="blog__img" src="https://iubem.com/wp-content/uploads/2020/10/politica-de-privacidade.jpg"
+                    alt="">
+
+
+                <div class="blog__post ">
+
+                    <!-- 
+                        <div class="blog__text">
+                            <br>
+                        <h3 class="blog__title">Como coletamos seus dados</h3>
+                        <p class="hero__text">
+                            Plataforma E-Commerce KaBuM!: através de seu cadastro na plataforma, coletamos informações como: nome, CPF, RG, data de nascimento, telefone, e-mail, endereço, CEP. A totalidade dos dados coletados e seu uso estão descritos na seção Dados que coletamos;
+                        </p>
+                        <p class="hero__text">
+                            Aplicativo E-Commerce KaBuM!: oferecido nas lojas de terceiros como o Google Play e Apple Store, nele também coletamos as informações referentes ao cadastro conforme mencionado no item acima;
+                        </p>
+                        <p class="hero__text">
+                            Canais de Atendimento: poderemos coletar dados por meio dos canais de atendimento KaBuM!
+                        </p>
+                        <p class="hero__text">
+                            Blog!
+                        </p>
+                        <p class="hero__text">
+                            Através de plataformas de terceiros, como, Facebook, Google. Estas plataformas possuem suas próprias políticas de privacidade e os dados que coletamos são aqueles cadastrados e autorizados naquela plataforma, posteriormente compartilhados com o KaBuM!. Dentro de nossa empresa esses dados são cuidados da mesma forma como os dados coletados diretamente por nós. Em relação ao tratamento de dados feitos pelas plataformas de terceiros, recomendamos que sejam lidas as políticas de privacidade das respectivas plataformas.
+                        </p>
+
+                        <h3 class="blog__title">Dados que coletamos</h3>
+                        <div class="hero__text">
+                            Durante sua interação com a nossa plataforma e aplicativo, coletamos dados pessoais para poder prestar serviços a você e melhorar sua interação com o nosso e-commerce. Para que possamos vender nossos produtos, alguns dados pessoais são utilizados para cumprimento legal ou regulatório, promoção do nosso negócio através do legítimo interesse, prevenção contra ações ilícitas e fraudes e campanhas de Marketing. Abaixo é possível ver os dados coletados e o propósito do tratamento:
+                            
+                            <h3 class="blog__title">Dados Cadastrais</h3>
+                            <p class="hero__text"">
+                                São dados coletados para realização de cadastro ou para alteração de cadastro na plataforma e aplicativo;Estes são utilizados para iniciar a prestação dos nossos serviços e viabilizar a compra e venda de produtos; Campanhas de Marketing; Procedimentos relacionados à emissão de nota fiscal; Atendimento de requisitos regulatórios; Armazenamento de registros de acesso à plataforma em conformidade com o Marco Civil da Internet; Prevenção à fraude na plataforma;
+                            </p>
+                            <p class="hero__text"">
+                                <p>Informações</p>
+                                <span>Nome; e-mail; sexo; número de CPF; número de RG; data de nascimento; número de telefone e endereço</span>
+                            </p>
+                            
+                            <br><
+
+                            <h3 class="blog__title">Dados Financeiros</h3>
+                            <p class="hero__text"">
+                                Procedimentos relacionados ao pagamento de produtos vendidos na plataforma e aplicativo do Chrome Eletronics!.
+                            </p>
+                            <p class="hero__text"">
+                                <p>Informações</p>
+                                <span>Dados bancários para processamento de pagamentos, informações do cartão de crédito (nome do titular, número do cartão, data de validade, código verificador, etc.)</span>
+                            </p>
+
+                            
+                        </div>
+                        
+                        
+                        <h3 class="blog__title">3. Acesso Remoto</h3>
+                        <p class="hero__text"">
+                            A computação em nuvem permite que equipes acessem aplicativos e dados de qualquer lugar, o que é 
+                            essencial para ambientes de trabalho flexíveis e colaborativos.
+                        </p>
+                        
+                        <h3 class="blog__title">4. Segurança e conformidade</h3>
+                        <p class="hero__text"">
+                            Muitos provedores de nuvem oferecem recursos avançados de segurança e conformidade, reduzindo 
+                            os riscos relacionados à proteção de dados.
+                        </p>
+
+                        <h3 class="blog__title">5. Atualização automáticas</h3>
+                        <p class="hero__text"">
+                            A responsabilidade pela manutenção e atualização da infraestrutura recai sobre o provedor de nuvem, 
+                            garantindo que as empresas sempre tenham acesso às versões mais recentes de software e segurança.
+                        </p>
+
+                        <br>
+                    </div>  -->
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Como coletamos seus dados
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Nós coletamos seus dados a partir das seguintes fontes:
+                                </p>
+                                <p class="questions__description">
+                                    Plataforma E-Commerce KaBuM!: através de seu cadastro na plataforma, coletamos
+                                    informações como: nome, CPF, RG, data de nascimento, telefone, e-mail, endereço,
+                                    CEP. A totalidade dos dados coletados e seu uso estão descritos na seção Dados que
+                                    coletamos;
+                                </p>
+                                <p class="questions__description">
+                                    Aplicativo E-Commerce KaBuM!: oferecido nas lojas de terceiros como o Google Play e
+                                    Apple Store, nele também coletamos as informações referentes ao cadastro conforme
+                                    mencionado no item acima;
+                                </p>
+                                <p class="questions__description">
+                                    Canais de Atendimento: poderemos coletar dados por meio dos canais de atendimento
+                                    KaBuM!
+                                </p>
+                                <p class="questions__description">Blog </p>
+                                <p class="questions__description">
+                                    Através de plataformas de terceiros, como, Facebook, Google. Estas plataformas
+                                    possuem suas próprias políticas de privacidade e os dados que coletamos são aqueles
+                                    cadastrados e autorizados naquela plataforma, posteriormente compartilhados com o
+                                    KaBuM!. Dentro de nossa empresa esses dados são cuidados da mesma forma como os
+                                    dados coletados diretamente por nós. Em relação ao tratamento de dados feitos pelas
+                                    plataformas de terceiros, recomendamos que sejam lidas as políticas de privacidade
+                                    das respectivas plataformas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Dados que coletamos
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Durante sua interação com a nossa plataforma e aplicativo, coletamos dados pessoais
+                                    para poder prestar serviços a você e melhorar sua interação com o nosso e-commerce.
+                                    Para que possamos vender nossos produtos, alguns dados pessoais são utilizados para
+                                    cumprimento legal ou regulatório, promoção do nosso negócio através do legítimo
+                                    interesse, prevenção contra ações ilícitas e fraudes e campanhas de Marketing.
+                                    Abaixo é possível ver os dados coletados e o propósito do tratamento:
+                                </p>
+                                <p class="questions__description">
+                                    Dados Cadastrais
+                                    São dados coletados para realização de cadastro ou para alteração de cadastro na
+                                    plataforma e aplicativo;Estes são utilizados para iniciar a prestação dos nossos
+                                    serviços e viabilizar a compra e venda de produtos; Campanhas de Marketing;
+                                    Procedimentos relacionados à emissão de nota fiscal; Atendimento de requisitos
+                                    regulatórios; Armazenamento de registros de acesso à plataforma em conformidade com
+                                    o Marco Civil da Internet; Prevenção à fraude na plataforma;
+
+                                    Informações
+                                    Nome; e-mail; sexo; número de CPF; número de RG; data de nascimento; número de
+                                    telefone e endereço
+                                </p>
+                                <p class="questions__description">
+                                    Dados Financeiros
+                                    Procedimentos relacionados ao pagamento de produtos vendidos na plataforma e
+                                    aplicativo do KaBuM!.
+
+                                    Informações
+                                    Dados bancários para processamento de pagamentos, informações do cartão de crédito
+                                    (nome do titular, número do cartão, data de validade, código verificador, etc.)
+                                </p>
+                                <p class="questions__description">
+                                    Dados Computacionais e de navegação
+                                    Melhoria da plataforma, como, performance e conteúdo de preferência dos clientes;
+                                    Armazenamento de registro de acesso; atendimento ao Marco Civil da Internet para
+                                    possível investigação; prevenção à fraude e outros atos ilícitos à plataforma
+                                    e-commerce e aplicativo;
+
+                                    Informações
+                                    Podemos coletar endereço IP utilizado na conexão, tipo de conexão à internet,
+                                    localização geográfica, data e hora de acesso, tipo de dispositivo, identificação de
+                                    navegador, tempo de uso no e-commerce, informações estatísticas sobre as suas
+                                    interações, cliques na plataforma, produtos e páginas visualizadas, inclusive
+                                    através de tecnologias como cookies, pixels, tags e tecnologias similares,
+                                    rastreadores de terceiros. Podemos ainda coletar modelos de hardware, sistemas
+                                    operacionais e versões, software, idiomas preferidos, identificadores exclusivos de
+                                    aparelhos, identificadores de publicidade, localização aproximada do dispositivo por
+                                    meio do endereço IP.
+                                </p>
+                                <p class="questions__description">
+                                    Outros dados pessoais
+                                    Identificação dos nossos clientes; oferecer serviços aprimorados e facilitados aos
+                                    clientes;
+
+                                    Informações
+                                    Podemos coletar informações de plataformas de terceiros, como Facebook e Google, no
+                                    momento que você acessa o e-commerce KaBuM! por meio destas plataformas. Atualmente
+                                    as informações coletadas são: nome, login (e-mail), idioma preferido e foto do
+                                    perfil, desde que você permita isso nestas plataformas. Também coletamos dados de
+                                    fontes publicamente disponíveis.
+                                </p>
+                                <p class="questions__description">
+                                    Atendimento
+                                    Atendimento à requisito regulatório e para proteção do KaBuM! em alguma disputa
+                                    judicial e análise interna caso haja necessidade, incluindo compartilhamento com
+                                    seguradoras e empresas de transporte
+
+                                    Informações
+                                    Coletamos informações que os clientes enviam quando entram em contato com o
+                                    atendimento, quando fazem reclamações, avaliações ou elogios, ou entram em contato
+                                    com o KaBuM! de outra forma, podendo inclusive gravar e ouvir as ligações, Isso pode
+                                    incluir comentários, fotos ou outros registros, inclusive de terceiros coletados
+                                    pelos próprios clientes.
+                                </p>
+                                <p class="questions__description">
+                                    De uma forma geral, utilizaremos seus dados para melhorar a segurança dos nossos
+                                    clientes e serviços, principalmente para: prevenção à fraude; prestar suporte ao
+                                    clientes; para enviar comunicações (sobre mudanças em nossos termos, políticas ou
+                                    serviços, por exemplo), bem como para comunicações de marketing (para divulgar
+                                    nossos serviços, promoções, sorteios, notícias, eventos e também para divulgar
+                                    produtos e serviços de nossos parceiros, por exemplo); para utilizá-los em
+                                    procedimentos jurídicos; para fornecer serviços e recursos; oferecer, processar ou
+                                    facilitar pagamentos de nossos produtos, bem como oferecer garantia estendida e
+                                    serviços de instalação.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Decisões automatizadas
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Utilizamos recursos tecnológicos que realizam decisões automatizadas para aumentar a
+                                    qualidade e proteção dos nossos serviços, como, prevenção do ambiente tecnológico
+                                    contra ações danosas, gerenciamento de riscos de crédito, combate à fraude ao KaBuM!
+                                    e aos nossos clientes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Dados de Crianças e Adolescentes
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    A plataforma E-Commerce KaBuM! e Aplicativo são destinados à qualquer pessoa que
+                                    gosta de tecnologia, contudo o cadastro e a compra são condicionados às exigências
+                                    legais. Caso seja menor de 18 anos, seu cadastro e compra deverão ser aprovados pelo
+                                    representante legal. Ao se cadastrar, o cliente da plataforma deve informar sua
+                                    idade real para que cadastros sejam criados com informações verdadeiras. Se tivermos
+                                    conhecimento de cadastro realizado por criança ou adolescentes de forma indevida,
+                                    tomaremos as medidas necessárias para eliminação dos dados pessoais, incluindo, mas
+                                    não se limitando à retirada da conta da plataforma/aplicativo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Compartilhamento de Dados Pessoais
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Para que possamos prestar nossos serviços com qualidade e atender a legislação
+                                    vigente, precisamos compartilhar alguns dados pessoais. Compartilhamos seus dados
+                                    quando aplicável com:
+
+                                    Instituições financeiras, administradoras de cartão de crédito e de pagamentos;
+                                    Empresas de prevenção à fraude;
+                                    Lojistas que utilizam a nossa plataforma de Marketplace;
+                                    Empresas de transportes;
+                                    Instituições Governamentais/autoridades policiais e judiciárias, para atendimento de
+                                    legislação vigente; atendimento às demandas judiciais/administrativas e controle
+                                    fiscal;
+                                    Parceiros de marketing ou comerciais;
+                                    Empresas de serviço de garantia estendida;
+                                    Empresas de serviço de instalação e/ou assistência técnica;
+                                    Com as empresas do mesmo grupo econômico.
+                                    Provedores de armazenamento;
+                                    Consultores, advogados, contadores e outros prestadores de serviços;
+                                    Mediante consentimento, de maneiras diferentes das listadas nesta política.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Medidas de Segurança
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    O KaBuM! investe continuamente e dispõe de medidas técnicas e administrativas de
+                                    segurança para proteger seus dados, alinhadas as melhores práticas de segurança da
+                                    informação. O KaBuM! preza pela Confidencialidade, Integridade e Disponibilidade das
+                                    informações e dos dados pessoais dos clientes, colaboradores e parceiros de
+                                    negócios. Há a busca contínua de métodos de proteção contra ações danosas que visam
+                                    utilizar, acessar, alterar e/ou destruir dados indevidamente, dentre elas, citamos:
+
+                                    Controle de acesso físico aos ambientes corporativos;
+                                    Acesso aos dados somente por profissionais que exercem funções necessárias para
+                                    atendimento das finalidades específicas;
+                                    Monitoramento contínuo dos sistemas de informações, de modo a prevenir, detectar e
+                                    bloquear ações danosas;
+                                    Armazenamento e transferência de dados utilizando métodos seguros.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Sobre a retenção e eliminação dos dados pessoais
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    De acordo com a legislação vigente, O KaBuM! faz uso dados por tempo necessário para
+                                    atender as finalidades para as quais foram coletados, para cumprir com os
+                                    requerimentos legais aplicáveis, para atendimento do legítimo interesse do KaBuM!,
+                                    bem como para atendimento dos interesses dos titulares dos dados. A pedido do
+                                    titular de dados, eliminaremos todos aqueles dados pessoais que forem permitidos
+                                    pela legislação vigente, como, sua subscrição às campanhas e notificações de
+                                    Marketing, eliminação de contas e demais dados pessoais. Apenas manteremos dados
+                                    pessoais para cumprimento legal ou regulatórios, cumprimento de exigências fiscais,
+                                    seguros, auditorias, contábeis e/ou para proteção do KaBuM!, como, prevenção a
+                                    fraudes e subsídio para eventuais demandas judiciais/administrativas.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="bx bx-plus questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Seus Direitos
+                                </h3>
+                            </header>
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    O Kabum visa atender todos os direitos de nossos clientes, conforme definido na Lei,
+                                    no que tange tratamento de dados pessoais:
+
+                                    Confirmar a existência de seus dados;
+                                    Acessar os dados;
+                                    Obter informação adicional sobre o uso e compartilhamento de dados;
+                                    Corrigir os dados;
+                                    Solicitar a portabilidade dos dados;
+                                    Revogar o consentimento de algum tratamento de dados;
+                                    Solicitar a eliminação de dados pessoais, quando possível, conforme previsto nessa
+                                    política.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="questions__description">
+                            Estamos sempre à disposição para esclarecer suas dúvidas e colocar você no controle dos seus
+                            dados pessoais. Contem conosco para mantê-los informados!.
+                            <div class="home__buttons">
+                                <a class="button--link button--flex" href="contact.html">contate-nos
+                                    <i class="bx bx-right-arrow-alt button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1-->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxl-mailchimp footer__logo-icon"></i>
+                    <!-- <i class="bx bxl-mailchimp footer__logo-icon"></i> -->
+                    Chrome | Eletronics
+                </a>
+                <p class="footer__description">Aproveite a maior venda <br>
+                    da sua vida.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Sobre Nós</a></li>
+                    <li><a href="#" class="footer__link">Suporte ao cliente</a></li>
+                    <li><a href="politica.html" class="footer__link">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nosso Serviço</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Comprar</a></li>
+                    <li><a href="#" class="footer__link">Desconto</a></li>
+                    <li><a href="#" class="footer__link">Modo de entrega</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nossa Companhia</h3>
+                <ul class="footer__links">
+                    <li><a href="registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="about.html" class="footer__link">Sobre nós
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169;<span class="footer__copy-autor">Chrome | Eletronics</span>.
+            Todos direitos reservados</span>
+    </footer>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+    </a>
+
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================= favicon ============ -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/mailchimp.png" width="3px" />
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- ============== JQUERY ==============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/3.6.0/jquery.min.js" charset="utf-8"></script>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <title>Chrome | Eletronics</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxl-mailchimp nav__logo-icon"></i>
+                Chrome | Eletronics
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link active-link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link">Faq's</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- includ toggler nav bar -->
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">R$ 120</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">R$ 160</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt="">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon Crush</h3>
+                    <span class="cart__price">R$ 100</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">R$ 28</span>
+        </div>
+    </div>
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input">
+            </div>
+            <div class="login__content">
+                <label for="" class="login__label">Password</label>
+                <input type="password" class="login__input">
+            </div>
+            <div>
+                <a href="#" class="button"> Sign in</a>
+            </div>
+            <div>
+                <p class="signup">Not a member? <a href="registration.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== SHOP ===============-->
+        <section class="shop section container">
+            <h2 class="breadcrumb__title">Shop Página</h2>
+            <h3 class="breadcrumb__subtitle">Home > <span>Comprar</span></h3>
+
+
+            <div class="shop__container grid">
+<!-- 
+                <div class="sidebar">
+                    <h3 class="filter__title">Selecione Filtro</h3>
+                    <div class="filter__content">
+                        <h3 class="filter__subtitle">Condição</h3>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Novo</p> <span>[13]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Oferta</p> <span>[13]</span>
+                        </div>
+                    </div>
+
+                    <div class="filter__content">
+                        <h3 class="filter__subtitle">Tamanho</h3>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>P</p> <span>[13]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>M</p> <span>[15]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>G</p> <span>[6]</span>
+                        </div>
+                    </div>
+
+                    <div class="filter__content">
+                        <h3 class="filter__subtitle">Categorias</h3>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Homem</p> <span>[2]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Mulher</p> <span>[4]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Criança</p> <span>[6]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Outros</p> <span>[4]</span>
+                        </div>
+                    </div>
+
+                    <div class="filter__content">
+                        <h3 class="filter__subtitle">Estilos</h3>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Casual</p> <span>[2]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Elegante</p> <span>[4]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Feminina</p> <span>[6]</span>
+                        </div>
+                    </div>
+
+                    <div class="filter__content">
+                        <h3 class="filter__subtitle">Sub Categories</h3>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+
+                            <p>Jaquetas</p> <span>[2]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Blusas</p> <span>[4]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Acessorios</p> <span>[6]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            <p>Calsados</p> <span>[4]</span>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" name="" id="">
+                            
+                            <p>Casacos</p> <span>[4]</span>
+                        </div>
+                    </div>
+                </div>
+ -->
+
+
+                <div class="shop__items grid">
+                    <div class="shop__content">
+                        <div class="shop__tag">Oferta</div>
+                        <img src="assets/image/audio/JBL__Fone_de_Ouvido_Sem_Fio__Tour_Pro_2__Bluetooth-01.png" alt="" class="shop__img">
+                        <h3 class="shop__title">JBL, Fone de Ouvido Sem Fio, Tour Pro 2, Bluetooth</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1406.00</span>
+                            <span class="shop__discounts">R$ 1699.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="shop__content">
+                        <div class="shop__tag">Hot</div>
+                        <img src="assets/image/video-cards/Galax_PLACA_DE_VIDEO_GEFORCE_RTX_3050_EX_1-CLICK_OC_8GB_GDDRD6-01.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">Galax PLACA DE VIDEO GEFORCE RTX 3050 EX 1-CLICK OC 8GB GDDRD6</h3>
+                        <span class="shop__subtitle">Acessorios - Placa de video</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1715.00</span>
+                            <!-- <span class="shop__discounts">R$ 2015.00</span> -->
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+                    <div class="shop__content">
+                        <div class="shop__tag">Hot</div>
+                        <img src="assets/image/video-cards/Galax_PLACA_DE_VIDEO_GEFORCE_RTX_3050_EX_1-CLICK_OC_8GB_GDDRD6-01.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">Galax PLACA DE VIDEO GEFORCE RTX 3050 EX 1-CLICK OC 8GB GDDRD6</h3>
+                        <span class="shop__subtitle">Acessorios - Placa de video</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1715.00</span>
+                            <!-- <span class="shop__discounts">R$ 2015.00</span> -->
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="shop__content">
+                        <div class="shop__tag">Oferta</div>
+                        <img src="assets/image/motherboard/Placa_Mãe_Gigabyte_B550M_AORUS_Elite__Chipset_B550__AMD_AM4.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">Placa Mãe Gigabyte B550M AORUS Elite, Chipset B550, AMD AM4, mATX, DDR4</h3>
+                        <span class="shop__subtitle">Acessorios - Placa mãe</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 765.50</span>
+                            <span class="shop__discounts">R$ 1044.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="shop__content">
+                        <div class="shop__tag">Hot</div>
+                        <img src="assets/image/audio/JBL-under-armour-Flash-TWS-01.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">Under Armour UA True Wireless Flash</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price" style="font-size: 1.2rem;">R$ 2220.00</span>
+                            <!-- <span class="shop__discounts">R$ 35.00</span> -->
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="shop__content">
+                        <div class="shop__tag">Novo</div>
+                        <img src="assets/image/audio/JBL-under-armour-01.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">JBL Under Armour On Ear Preto - UAONEARBTBLK</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1320.00</span>
+                            <span class="shop__discounts">R$ 2035.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="shop__content" id="">
+                        <div class="shop__tag">Oferta</div>
+                        <!-- <img src="https://images.tcdn.com.br/img/img_prod/894244/pioneer_hdj_cue1_bk_fone_de_ouvido_dj_preto_6665_1_2e7092bdfbb6bbe7d0a359834919e5da.jpg" alt="" class="shop__img"> -->
+                        <img src="assets/image/audio/Headset.png" alt="" class="shop__img">
+
+                        <h3 class="shop__title">Pioner DJ HDJ Cuel BK - Preto</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 700.00</span>
+                            <span class="shop__discounts">R$ 850.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+                    
+
+                    <div class="shop__content">
+                        <div class="shop__tag">Oferta</div>
+                        <img src="assets/image/audio/JBL__Fone_de_Ouvido_Sem_Fio__Tour_Pro_2__Bluetooth-01.png" alt="" class="shop__img">
+                        <h3 class="shop__title">JBL, Fone de Ouvido Sem Fio, Tour Pro 2, Bluetooth</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1406.00</span>
+                            <span class="shop__discounts">R$ 1699.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+                    <div class="shop__content">
+                        <div class="shop__tag">Oferta</div>
+                        <img src="assets/image/audio/JBL__Fone_de_Ouvido_Sem_Fio__Tour_Pro_2__Bluetooth-01.png" alt="" class="shop__img">
+                        <h3 class="shop__title">JBL, Fone de Ouvido Sem Fio, Tour Pro 2, Bluetooth</h3>
+                        <span class="shop__subtitle">Acessorios - Fones</span>
+                        <div class="shop__prices">
+                            <span class="shop__price">R$ 1406.00</span>
+                            <span class="shop__discounts">R$ 1699.00</span>
+                        </div>
+                        <a class="button shop__button" href="details.html">
+                            <i class="bx bx-cart-alt shop__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pagination">
+
+                <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item current-page active"><a class="page-link " href="#">1</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+                <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+            </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1-->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxl-mailchimp footer__logo-icon"></i>
+                    Chrome | Eletronics
+                </a>
+                <p class="footer__description">Aproveite a maior venda <br> da sua vida.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre</h3>
+
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Sobre Nós</a></li>
+                    <li><a href="#" class="footer__link">Suporte ao cliente</a></li>
+                    <li><a href="politica.html" class="footer__link">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nosso Serviço</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Comprar</a></li>
+                    <li><a href="#" class="footer__link">Desconto</a></li>
+                    <li><a href="#" class="footer__link">Modo de entrega</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nossa Companhia</h3>
+                <ul class="footer__links">
+                    <li><a href="registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="about.html" class="footer__link">Sobre nós </a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169;<span class="footer__copy-autor">Chrome | Eletronics</span>. Todos direitos
+            reservados</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+    </a>
+    <!--=============== STYLE SWITCHER ===============-->
+
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
