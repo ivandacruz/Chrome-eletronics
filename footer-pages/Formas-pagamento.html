@@ -7,20 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--================= favicon ============ -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/image/shortcut.png" width="3px" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/image/shortcut.png" width="3px" />
 
     <!--=============== BOXICONS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
 
     <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/colors/color-1.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/colors/color-1.css">
 
     <title>Chrome | Eletronics</title>
-
 </head>
 
 <body>
@@ -35,15 +34,15 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Home</a>
-                    </li>
-                    <!-- active-link -->
-                    <li class="nav__item">
-                        <a href="../shop.html" class="nav__link ">Shop</a>
+                        <a href="../index.html" class="nav__link ">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="../cart.html" class="nav__link active-link">Sobre</a>
+                        <a href="../shop.html" class="nav__link">Shop</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="../cart.html" class="nav__link">Cart</a>
                     </li>
 
                     <li class="nav__item">
@@ -62,7 +61,7 @@
                     <i class="bx bx-x"></i>
                 </div>
             </div>
-            <!-- includ toggler nav bar -->
+            <!-- include toggler nav bar -->
             <div class="nav__btns">
                 <div class="login__toggle" id="login-button">
                     <i class="bx bx-user"></i>
@@ -76,7 +75,6 @@
             </div>
         </nav>
     </header>
-
     <!--=============== CART ===============-->
     <div class="cart" id="cart">
         <i class="bx bx-x cart__close" id="cart-close"></i>
@@ -84,7 +82,7 @@
         <div class="cart__container">
             <article class="cart__card">
                 <div class="cart__box">
-                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt="">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt>
                 </div>
                 <div class="cart__details">
                     <h3 class="cart__title">Windbreaker</h3>
@@ -106,7 +104,7 @@
 
             <article class="cart__card">
                 <div class="cart__box">
-                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt="">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt>
                 </div>
                 <div class="cart__details">
                     <h3 class="cart__title">Cardigan Hoodie</h3>
@@ -128,7 +126,7 @@
 
             <article class="cart__card">
                 <div class="cart__box">
-                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt="">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt>
                 </div>
                 <div class="cart__details">
                     <h3 class="cart__title">Cartoon Crush</h3>
@@ -153,108 +151,148 @@
             <span class="cart__prices-total">R$ 28</span>
         </div>
     </div>
-
     <!--=============== LOGIN ===============-->
     <div class="login" id="login">
         <i class="bx bx-x login__close" id="login-close"></i>
         <h2 class="login__title-center">Login</h2>
-        <form action="" class="login__form grid">
+        <form action class="login__form grid">
             <div class="login__content">
-                <label for="" class="login__label">Email</label>
+                <label for class="login__label">Email</label>
                 <input type="email" class="login__input">
             </div>
             <div class="login__content">
-                <label for="" class="login__label">Password</label>
+                <label for class="login__label">Password</label>
                 <input type="password" class="login__input">
             </div>
             <div>
                 <a href="#" class="button"> Sign in</a>
             </div>
             <div>
-                <p class="signup">Not a member? <a href="../registration.html">Sign up now</a></p>
+                <p class="signup">Not a member? <a href="../registration.html">Sign
+                        up now</a></p>
             </div>
         </form>
     </div>
 
     <!--=============== MAIN ===============-->
     <main class="main">
-        <!--=============== ABOUT ===============-->
-        <section class="about section container">
-            <!-- <h2 class="breadcrumb__title">Página Sobre Nós</h2> -->
+        <!--=============== BLOG ===============-->
+        <section class="blog section container">
+            <!-- <h2 class="breadcrumb__title">Página de Termos e Condições</h2> -->
             <h3 class="breadcrumb__subtitle">
-                <a class="button--link button--flex" href="../index.html">Home</a> > <span>SOBRE NÓS</span>
+                <a class="button--link button--flex" href="../index.html">Home</a> > <span>Formas de Pagamento</span>
             </h3>
 
-            <div class="about__container grid">
-                <img class="about__img" src="https://www.pge.ms.gov.br/wp-content/uploads/2019/07/quem_somos_site-2.png" alt="">
-                <!-- <img class="about__img" src="assets/images/about/about-img.jpg" alt=""> -->
-                <div class="about__data">
-                    <h2 class="section__title about__title" style="text-align: center;">Quem realmente somos & <br> por
-                        que nos escolher</h2>
-                    <p class="about__description" style="text-align: center;">
-                        Temos mais de 4.000 avaliações imparciais e nossos clientes sempre confiam em nossos produtos e
-                        serviço de entrega.
-                    </p>
-                    <div class="about__details">
-                        <p class="about__details-description">
-                            <i class="bx bxs-check-square about__details-icon"></i>
-                            Sempre entregamos ao vivo.
+            <div class="blog__container grid">
+                <h3 class="blog__title" style="text-align: center; color: brown;">Formas de Pagamento</h3>
+
+                <div class="blog__post ">
+                    <div class="blog__text">
+                        <h3 class="blog__title" style="text-align: center;">
+                            PRAZOS E FORMAS DE ENVIO
+                        </h3>
+                        <p class="hero__text">
+                            Todos os produtos serão enviados de acordo com a forma escolhida pelo cliente, muito bem
+                            embalados para evitar qualquer tipo de dano durante o transporte.
                         </p>
-                        <p class="about__details-description">
-                            <i class="bx bxs-check-square about__details-icon"></i>
-                            Fornecemos guias sobre produtos e cuidados com seus produtos.
+                        <h3 class="blog__title">O prazo para a entrega é influenciado por dois fatores:</h3>
+
+                        <p class="hero__text">1) De acordo com a forma de envio escolhida, já que a entrega fica a cargo
+                            dos Correios ou Transportadora.</p>
+
+                        <p class="hero__text">2) De acordo com a disponibilidade do produto em estoque, o prazo de
+                            postagem de cada produto está informado no campo disponibilidade, no anúncio do mesmo.</p>
+
+
+
+                        <h3 class="blog__title">Exemplo: </h3>
+                        <p class="hero__text">
+                            2 Dias úteis = produto será enviado dentro desse prazo, assim que seu pagamento for
+                            confirmado ou a verificação cadastral ser concluída.
                         </p>
-                        <p class="about__details-description">
-                            <i class="bx bxs-check-square about__details-icon"></i>
-                            Garantia de devolução de 100% do dinheiro.
+
+
+                        <p class="hero__text">
+                            Após finalizada a postagem, será informado o código para rastrear sua Compra através do site
+                            dos correios ou Transportadora, assim que ela for postada.
+                        </p>
+
+
+                        <p class="hero__text">
+                            Todos os produtos enviados pela TeraByteShop estão com seguro declarado no valor de 1% das
+                            mercadorias de acordo com as taxas dos Correios, em todas as formas de envio, para que não
+                            haja prejuizos para a TeraByteShop nem para o cliente.
+                        </p>
+                    </div>
+                    <div class="blog__text">
+                        <h3 class="blog__title">
+                            PAGAMENTO
+                        </h3>
+                        <p class="hero__text">
+                            Trabalhamos com diversas formas de pagamento - Todas as formas de pagamento e prazos não consideram Sábados, Domingos e feriados. Se sua compra for feita após as 18:00Hrs, considere contagem do prazo no dia útil seguinte.
+                        </p>
+                        <h3 class="blog__title">
+                            CARTÃO DE CRÉDITO
+                        </h3>
+                        <p class="hero__text">
+                            Opção ideal para parcelar suas compras em até 12x sem juros.
+                        </p>
+                        <p class="hero__text">
+                            - O prazo para processamento de compras por cartão de crédito leva de 1 até 3 dias úteis, 
+                            quando o cartão está no mesmo nome do comprador.
+                        </p>
+                        <h3 class="blog__title">
+                            OBSERVAÇÃO: 
+                        </h3>
+                        <p class="hero__text" style="color: red;">
+                            Compras com cartões de terceiros o prazo poderá ser estendido conforme necessidade de tempo 
+                            para confirmação da compra.
+                        </p>
+                        <p class="hero__text">
+                            - Pagamentos via cartão de crédito estão sujeitos a verificação cadastral de segurança de 
+                            acordo com normas estabelecidas pelas operadoras de cartões de crédito. Compras com cartão 
+                            estão sujeitas a solicitação de documentos para comprovação de dados.
+                        </p>
+                        <p class="hero__text">
+                            - Não efetuamos envios para Caixa Postal ou posta restante em nenhuma circunstância com pagamentos 
+                            via cartão de crédito. Compras com cartões de terceiros estão sujeitas a conferência de endereço de 
+                            entrega. Nos reservamos o direito de cancelar o pedido em caso de divergências cadastrais.
+                        </p>
+                        <p class="hero__text">
+                            - TODAS AS COMPRAS FEITAS COM CARTÃO ESTÃO SUJEITA A ANALISE.
+                        </p>
+                        
+                        <h3 class="blog__title">
+                            OBSERVAÇÃO: 
+                        </h3>
+                        <p class="hero__text">
+                            Opção válida apenas para pagamento à vista. Acrescente 24hrs úteis ao prazo de entrega informado no site, 
+                            pois esse é o prazo estipulado pelo banco para disponibilizar a confirmação de pagamento do boleto. 
+                            Não efetue o pagamento de boleto com cheque.
                         </p>
                     </div>
                 </div>
-                <br>
-            </div>
-            <div class="blog__post ">
-                <div class="blog__text">
-                    <h3 class="blog__title" style="text-align: center; margin-top: 1rem;">Nossa história</h3>
-                    <p class=" hero__text">
-                        Fundada no ano de 2022, a Chrome Eletronics é uma empresa que trabalha com os mais variados
-                        produtos, atuando principalmente no setor de informática e equipamentos eletrônicos em
-                        geral, área bastante competitiva e em constante crescimento, onde qualidade, variedade,
-                        garantia e eficiência são critérios importantíssimos para total satisfação, confiança e
-                        preferência de nossos consumidores.
-                    </p>
-                    <p class=" hero__text">
-                        Além do nosso e-commerce, onde temos a variedade de nosso site ao gosto dos mais 
-                        exigentes clientes. Oferecemos não apenas a comodidade da compra online, 
-                        mas também o tratamento olho no olho que muitos preferem e sempre confiam.
-                    </p>
-
-                    <p class=" hero__text">
-                        Procuramos acima de tudo oferecer o que há de melhor, os melhores fornecedores, os mais
-                        atualizados produtos, o mais atencioso dos atendimentos, juntamente com os preços mais
-                        competitivos e atraentes do mercado para que nosso público encontre não apenas variedade
-                        e qualidade, mas também uma empresa que se preocupa com a felicidade e total satisfação de
-                        seus clientes e por que não, amigos!
-                    </p>
+                <div class="questions__description">
+                    Estamos sempre à disposição para esclarecer suas dúvidas qualquer dificuldades ou duvidas entre em contato 
+                    em nossos contatos.
+                    <div class="home__buttons" style="font-size: 1rem;">
+                        <a class="button--link button--flex" href="../contact.html">Contate-nos
+                            <i class="bx bx-right-arrow-alt button__icon"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="home__buttons">
-                    <a class="button--link button--flex" href="#">Saiba Mais
-                        <i class="bx bx-right-arrow-alt button__icon"></i>
-                    </a>
-                </div>
-            </div>
         </section>
     </main>
-
     <!--=============== FOOTER ===============-->
     <footer class="footer section">
         <div class="footer__container container grid">
-            <!-- FOOTER CONTENT 1-->
             <div class="footer__content">
                 <a href="#" class="footer__logo">
                     <i class="bx bxl-mailchimp footer__logo-icon"></i>
                     Chrome | Eletronics
                 </a>
-                <p class="footer__description">Aproveite a maior venda <br> da sua vida.</p>
+                <p class="footer__description">Aproveite a maior venda <br>
+                    da sua vida.</p>
                 <div class="footer__social">
                     <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
                     <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
@@ -262,34 +300,28 @@
                     <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
                 </div>
             </div>
-            <!-- FOOTER CONTENT 2 -->
             <div class="footer__content">
                 <h3 class="footer__title">Sobre</h3>
-
                 <ul class="footer__links">
-                    <li><a href="../footer-pages/termos.html" class="footer__link">Termos e  Condições</a></li>
-                    <li><a href="../footer-pages/suppliers.html" class="footer__link">Nossos Fornecedores</a></li>
-                    <li><a href="../footer-pages/politica.html" class="footer__link">Política de Privacidade</a></li>
+                    <li><a href="/footer-pages/termos.html" class="footer__link">Termos e condições</a></li>
+                    <li><a href="/footer-pages/suppliers.html" class="footer__link">Nossos Fronecedores</a></li>
+                    <li><a href="/footer-pages/politica.html" class="footer__link">Política de privacidade</a></li>
                 </ul>
             </div>
-
-            <!-- FOOTER CONTENT 3 -->
             <div class="footer__content">
                 <h3 class="footer__title">Nosso Serviço</h3>
                 <ul class="footer__links">
-                    <li><a href="../footer-pages/como-comprar.html" class="footer__link">Como Comprar</a></li>
-                    <li><a href="../footer-pages/trocas-devolucao.html" class="footer__link">Trocas & Devolução</a></li>
-                    <li><a href="../footer-pages/Formas-pagamento.html" class="footer__link">Formas de Pagamento</a></li>
+                    <li><a href="/footer-pages/como-comprar.html" class="footer__link">Como Comprar</a></li>
+                    <li><a href="/footer-pages/trocas-devolucao.html" class="footer__link">Trocas & Devolução</a></li>
+                    <li><a href="#" class="footer__link">Formas de Pagamento</a></li>
                 </ul>
             </div>
-
-            <!-- FOOTER CONTENT 4 -->
             <div class="footer__content">
                 <h3 class="footer__title">Nossa Companhia</h3>
                 <ul class="footer__links">
-                    <li><a href="../footer-pages/registration.html" class="footer__link">Registro</a></li>
-                    <li><a href="../contact.html" class="footer__link">Contate-nos</a></li>
-                    <li><a href="#" class="footer__link">Sobre nós</a></li>
+                    <li><a href="/footer-pages/registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="/contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="/footer-pages/about.html" class="footer__link">Sobre nós </a></li>
                 </ul>
             </div>
         </div>
@@ -300,11 +332,11 @@
             Todos direitos reservados
         </span>
     </footer>
-
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="bx bx-up-arrow-alt scrollup-icon"></i>
     </a>
+
     <!--=============== STYLE SWITCHER ===============-->
 
     <!--=============== SWIPER JS ===============-->
