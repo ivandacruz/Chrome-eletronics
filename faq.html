@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--================= favicon ============ -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/mailchimp.png" width="3px" />
-    
+
     <!--=============== BOXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
@@ -22,401 +20,393 @@
     <link rel="stylesheet" href="assets/css/colors/color-1.css" />
 
     <title>Chrome | Eletronics</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--=============== HEADER ===============-->
     <header class="header" id="header">
-      <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-          <i class="bx bxl-mailchimp nav__logo-icon"></i>
-          Chrome | Eletronics
-        </a>
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="bx bxl-mailchimp nav__logo-icon"></i>
+                Chrome | Eletronics
+            </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
-            </li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="shop.html" class="nav__link">Shop</a>
-            </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="cart.html" class="nav__link">Cart</a>
-            </li>
+                    <li class="nav__item">
+                        <a href="cart.html" class="nav__link">Cart</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="blog.html" class="nav__link">Blog</a>
-            </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="faq.html" class="nav__link active-link">Faq's</a>
-            </li>
+                    <li class="nav__item">
+                        <a href="faq.html" class="nav__link active-link">Faq's</a>
+                    </li>
 
-            <li class="nav__item">
-              <a href="contact.html" class="nav__link">Contact</a>
-            </li>
-          </ul>
-          <div class="nav__close" id="nav-close">
-            <i class="bx bx-x"></i>
-          </div>
-        </div>
-        <!-- includ toggler nav bar -->
-        <div class="nav__btns">
-          <div class="login__toggle" id="login-button">
-            <i class="bx bx-user"></i>
-          </div>
-          <div class="nav__shop" id="cart-shop">
-            <i class="bx bx-shopping-bag"></i>
-          </div>
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-grid-alt"></i>
-          </div>
-        </div>
-      </nav>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <!-- includ toggler nav bar -->
+            <div class="nav__btns">
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-shopping-bag"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
+        </nav>
     </header>
     <!--=============== CART ===============-->
     <div class="cart" id="cart">
-      <i class="bx bx-x cart__close" id="cart-close"></i>
-      <h2 class="cart__title-center">My Cart</h2>
-      <div class="cart__container">
-        <article class="cart__card">
-          <div class="cart__box">
-            <img class="cart__img" src="assets/images/cart/cart-1.png" alt />
-          </div>
-          <div class="cart__details">
-            <h3 class="cart__title">Windbreaker</h3>
-            <span class="cart__price">R$ 120</span>
-            <div class="cart__amount">
-              <div class="cart__amount-content">
-                <span class="cart__amount-box">
-                  <i class="bx bx-minus"></i>
-                </span>
-                <span class="cart__amount-number">1</span>
-                <span class="cart__amount-box">
-                  <i class="bx bx-plus"></i>
-                </span>
-              </div>
-              <i class="bx bx-trash-alt cart__amount-trash"></i>
-            </div>
-          </div>
-        </article>
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">My Cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-1.png" alt />
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Windbreaker</h3>
+                    <span class="cart__price">R$ 120</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
 
-        <article class="cart__card">
-          <div class="cart__box">
-            <img class="cart__img" src="assets/images/cart/cart-2.png" alt />
-          </div>
-          <div class="cart__details">
-            <h3 class="cart__title">Cardigan Hoodie</h3>
-            <span class="cart__price">R$ 160</span>
-            <div class="cart__amount">
-              <div class="cart__amount-content">
-                <span class="cart__amount-box">
-                  <i class="bx bx-minus"></i>
-                </span>
-                <span class="cart__amount-number">1</span>
-                <span class="cart__amount-box">
-                  <i class="bx bx-plus"></i>
-                </span>
-              </div>
-              <i class="bx bx-trash-alt cart__amount-trash"></i>
-            </div>
-          </div>
-        </article>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-2.png" alt />
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan Hoodie</h3>
+                    <span class="cart__price">R$ 160</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
 
-        <article class="cart__card">
-          <div class="cart__box">
-            <img class="cart__img" src="assets/images/cart/cart-3.png" alt />
-          </div>
-          <div class="cart__details">
-            <h3 class="cart__title">Cartoon Crush</h3>
-            <span class="cart__price">R$ 100</span>
-            <div class="cart__amount">
-              <div class="cart__amount-content">
-                <span class="cart__amount-box">
-                  <i class="bx bx-minus"></i>
-                </span>
-                <span class="cart__amount-number">1</span>
-                <span class="cart__amount-box">
-                  <i class="bx bx-plus"></i>
-                </span>
-              </div>
-              <i class="bx bx-trash-alt cart__amount-trash"></i>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="cart__prices">
-        <span class="cart__prices-item">3 item</span>
-        <span class="cart__prices-total">R$ 28</span>
-      </div>
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img class="cart__img" src="assets/images/cart/cart-3.png" alt />
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon Crush</h3>
+                    <span class="cart__price">R$ 100</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__prices-total">R$ 28</span>
+        </div>
     </div>
     <!--=============== LOGIN ===============-->
     <div class="login" id="login">
-      <i class="bx bx-x login__close" id="login-close"></i>
-      <h2 class="login__title-center">Login</h2>
-      <form action class="login__form grid">
-        <div class="login__content">
-          <label for class="login__label">Email</label>
-          <input type="email" class="login__input" />
-        </div>
-        <div class="login__content">
-          <label for class="login__label">Password</label>
-          <input type="password" class="login__input" />
-        </div>
-        <div>
-          <a href="#" class="button"> Sign in</a>
-        </div>
-        <div>
-          <p class="signup">
-            Not a member? <a href="registration.html">Sign up now</a>
-          </p>
-        </div>
-      </form>
+        <i class="bx bx-x login__close" id="login-close"></i>
+        <h2 class="login__title-center">Login</h2>
+        <form action class="login__form grid">
+            <div class="login__content">
+                <label for class="login__label">Email</label>
+                <input type="email" class="login__input" />
+            </div>
+            <div class="login__content">
+                <label for class="login__label">Password</label>
+                <input type="password" class="login__input" />
+            </div>
+            <div>
+                <a href="#" class="button"> Sign in</a>
+            </div>
+            <div>
+                <p class="signup">
+                    Not a member? <a href="registration.html">Sign up now</a>
+                </p>
+            </div>
+        </form>
     </div>
 
     <!--=============== MAIN ===============-->
     <main class="main">
-      <!--=============== FAQ'S ===============-->
-      <section class="questions section container">
-        <h2 class="breadcrumb__title">Página do FAQ'S</h2>
-        <h3 class="breadcrumb__subtitle ">
-          <a class="button--link button--flex" href="index.html">Home</a> > <span>FAQ'S</span>
-        </h3>
+        <!--=============== FAQ'S ===============-->
+        <section class="questions section container">
+            <h2 class="breadcrumb__title">Página do FAQ'S</h2>
+            <h3 class="breadcrumb__subtitle ">
+                <a class="button--link button--flex" href="index.html">Home</a> > <span>FAQ'S</span>
+            </h3>
 
-        <!-- 1. MEUS PEDIDOS   -->
-        <div class="questions__container grid">
-            
-          <div class="questions__group">
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                  1.1 Consigo rastrear o minha Compra?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  Sim. As informações mais atualizadas sobre sua Compra e a
-                  situação de entrega de sua Compra estão disponíveis em Meus
-                  pedidos. Além disso, você será notificado do andamento do seu
-                  pedido pelo e-mail cadastrado.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                  1.2. Qual a empresa responsável pela entrega da minha Compra?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  As entregas são realizadas exclusivamente por empresas
-                  selecionadas e contratadas exclusivamente pela Gebana, não
-                  tendo o Cliente nenhuma influência sobre tal decisão. Neste
-                  momento, trabalhamos com as transportadoras TNT e Jadlog.
-                  Estamos analisando constantemente outras transportadoras para
-                  melhorarmos os valores de nossos fretes.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                  1.3. Posso adicionar outro produto à Compra que eu fiz?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  Não, após finalizada, a Compra não poderá ser alterada. Para
-                  adquirir outro produto, você deverá iniciar uma nova Compra.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                    1.4. Não recebi todos os itens da minha Compra. O que faço?  
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                    Entre em contato com o nosso SAC Gebana Brasil pelo telefone 
-                    (46) 3552-1614 ou pelos outros meios de atendimento disponibilizados.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                    1.5. Posso efetuar uma Compra no site com CNPJ? 
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                    Neste momento, não estamos trabalhando com esta opção. Apenas 
-                    pessoas físicas podem se cadastrar no site e efetuar Compras. 
-                    A aquisição de produtos por meio de CNPJ pode ser feito através 
-                    do e-mail atendimento@gebana.com.br.
-                </p>
-              </div>
-            </div>
-          </div>
+            <!-- 1. MEUS PEDIDOS   -->
+            <div class="questions__container grid">
 
-          <!-- 2. PAGAMENTO  -->
-          <div class="questions__group">
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                  2.1. Quais são os meios de pagamentos disponíveis?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  No momento, o site aceita pagamento por boleto bancário e
-                  cartões de crédito emitidos no Brasil de bandeiras
-                  Mastercard®, Visa® e American Express®.
-                </p>
-              </div>
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                1.1 Consigo rastrear o minha Compra?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Sim. As informações mais atualizadas sobre sua Compra e a
+                                situação de entrega de sua Compra estão disponíveis em Meus
+                                pedidos. Além disso, você será notificado do andamento do seu
+                                pedido pelo e-mail cadastrado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                1.2. Qual a empresa responsável pela entrega da minha Compra?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                As entregas são realizadas exclusivamente por empresas
+                                selecionadas e contratadas exclusivamente pela Gebana, não
+                                tendo o Cliente nenhuma influência sobre tal decisão. Neste
+                                momento, trabalhamos com as transportadoras TNT e Jadlog.
+                                Estamos analisando constantemente outras transportadoras para
+                                melhorarmos os valores de nossos fretes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                1.3. Posso adicionar outro produto à Compra que eu fiz?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Não, após finalizada, a Compra não poderá ser alterada. Para
+                                adquirir outro produto, você deverá iniciar uma nova Compra.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                1.4. Não recebi todos os itens da minha Compra. O que faço?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Entre em contato com o nosso SAC Gebana Brasil pelo telefone
+                                (46) 3552-1614 ou pelos outros meios de atendimento disponibilizados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                1.5. Posso efetuar uma Compra no site com CNPJ?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Neste momento, não estamos trabalhando com esta opção. Apenas
+                                pessoas físicas podem se cadastrar no site e efetuar Compras.
+                                A aquisição de produtos por meio de CNPJ pode ser feito através
+                                do e-mail atendimento@gebana.com.br.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. PAGAMENTO  -->
+                <div class="questions__group">
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                2.1. Quais são os meios de pagamentos disponíveis?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                No momento, o site aceita pagamento por boleto bancário e
+                                cartões de crédito emitidos no Brasil de bandeiras
+                                Mastercard®, Visa® e American Express®.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                2.2. Qual o procedimento se houver pagamento em duplicidade?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Você pode entrar em contato com o SAC Gebana Brasil pelo
+                                telefone (46) 3552-1614 ou pelos outros meios de atendimento
+                                disponibilizados. Neste contato, você poderá solicitar o
+                                cancelamento do pagamento duplicado. Após análise, a Gebana
+                                Brasil requererá à operadora do cartão que faça o estorno, se
+                                devido.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                2.3. E se o meu pagamento não for aprovado?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Você será notificado em até 48 horas e deverá inserir outro
+                                meio de pagamento. Caso contrário, a compra no site será
+                                cancelada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                2.4. Qual é o prazo de aprovação da Compra?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                O prazo é de até 48 horas.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="questions__item">
+                        <header class="questions__header">
+                            <i class="bx bx-plus questions__icon"></i>
+                            <h3 class="questions__item-title">
+                                2.5. Posso alterar o cartão depois da finalização da Compra?
+                            </h3>
+                        </header>
+                        <div class="questions__content">
+                            <p class="questions__description">
+                                Não será possível este procedimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                  2.2. Qual o procedimento se houver pagamento em duplicidade?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  Você pode entrar em contato com o SAC Gebana Brasil pelo
-                  telefone (46) 3552-1614 ou pelos outros meios de atendimento
-                  disponibilizados. Neste contato, você poderá solicitar o
-                  cancelamento do pagamento duplicado. Após análise, a Gebana
-                  Brasil requererá à operadora do cartão que faça o estorno, se
-                  devido.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                    2.3. E se o meu pagamento não for aprovado?
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                  Você será notificado em até 48 horas e deverá inserir outro
-                  meio de pagamento. Caso contrário, a compra no site será
-                  cancelada.
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                    2.4. Qual é o prazo de aprovação da Compra? 
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                    O prazo é de até 48 horas.  
-                </p>
-              </div>
-            </div>
-            <div class="questions__item">
-              <header class="questions__header">
-                <i class="bx bx-plus questions__icon"></i>
-                <h3 class="questions__item-title">
-                    2.5. Posso alterar o cartão depois da finalização da Compra? 
-                </h3>
-              </header>
-              <div class="questions__content">
-                <p class="questions__description">
-                    Não será possível este procedimento.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer section">
-      <div class="footer__container container grid">
-        <!-- FOOTER CONTENT 1-->
-        <div class="footer__content">
-          <a href="#" class="footer__logo">
-            <i class="bx bxl-mailchimp footer__logo-icon"></i>
-            Chrome | Eletronics
-          </a>
-          <p class="footer__description">
-            Aproveite a maior venda <br />
-            da sua vida.
-          </p>
-          <div class="footer__social">
-            <a href="#" class="footer__social-link"
-              ><i class="bx bxl-facebook"></i
-            ></a>
-            <a href="#" class="footer__social-link"
-              ><i class="bx bxl-instagram-alt"></i
-            ></a>
-            <a href="#" class="footer__social-link"
-              ><i class="bx bxl-twitter"></i
-            ></a>
-            <a href="#" class="footer__social-link"
-              ><i class="bx bxl-whatsapp"></i
-            ></a>
-          </div>
-        </div>
-        <!-- FOOTER CONTENT 2 -->
-        <div class="footer__content">
-          <h3 class="footer__title">Sobre</h3>
+        <div class="footer__container container grid">
+            <!-- FOOTER CONTENT 1-->
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="bx bxl-mailchimp footer__logo-icon"></i>
+                    Chrome | Eletronics
+                </a>
+                <p class="footer__description">Aproveite a maior venda <br> da sua vida.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- FOOTER CONTENT 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Sobre</h3>
+                <ul class="footer__links">
+                    <li><a href="footer-pages/termos.html" class="footer__link">Termos e condições</a></li>
+                    <li><a href="footer-pages/suppliers.html" class="footer__link">Nossos Fronecedores</a></li>
+                    <li><a href="footer-pages/politica.html" class="footer__link">Política de privacidade</a></li>
+                </ul>
+            </div>
 
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Sobre Nós</a></li>
-            <li><a href="#" class="footer__link">Suporte ao cliente</a></li>
-            <li><a href="politica.html" class="footer__link">Política de privacidade</a></li>
-          </ul>
+            <!-- FOOTER CONTENT 3 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nosso Serviço</h3>
+                <ul class="footer__links">
+                    <li><a href="footer-pages/como-comprar.html" class="footer__link">Como Comprar</a></li>
+                    <li><a href="footer-pages/trocas-devolucao.html" class="footer__link">Trocas & Devolução</a></li>
+                    <li><a href="footer-pages/Formas-pagamento.html" class="footer__link">Formas de Pagamento</a></li>
+                </ul>
+            </div>
+
+            <!-- FOOTER CONTENT 4 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Nossa Companhia</h3>
+                <ul class="footer__links">
+                    <li><a href="footer-pages/registration.html" class="footer__link">Registro</a></li>
+                    <li><a href="contact.html" class="footer__link">Contate-nos</a></li>
+                    <li><a href="footer-pages/about.html" class="footer__link">Sobre nós </a></li>
+                </ul>
+            </div>
         </div>
 
-        <!-- FOOTER CONTENT 3 -->
-        <div class="footer__content">
-          <h3 class="footer__title">Nosso Serviço</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Comprar</a></li>
-            <li><a href="#" class="footer__link">Desconto</a></li>
-            <li><a href="#" class="footer__link">Modo de entrega</a></li>
-          </ul>
-        </div>
-
-        <!-- FOOTER CONTENT 4 -->
-        <div class="footer__content">
-          <h3 class="footer__title">Nossa Companhia</h3>
-          <ul class="footer__links">
-            <li><a href="registration.html" class="footer__link">Registro</a></li>
-            <li><a href="contact.html" class="footer__link">Contate-nos</a></li>
-            <li><a href="about.html" class="footer__link">Sobre nós </a></li>
-          </ul>
-        </div>
-      </div>
-      <span class="footer__copy"
-        >&#169;<span class="footer__copy-autor">Chrome | Eletronics</span>. Todos direitos
-        reservados</span
-      >
+        <span class="footer__copy">&#169;
+            <span class="footer__copy-autor">
+                <a class="button--link button--flex" href="#">Chrome | Eletronics </a>
+            </span>.
+            Todos direitos reservados
+        </span>
     </footer>
     <!--=============== SCROLL UP ===============-->
     <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollup-icon"></i>
+        <i class="bx bx-up-arrow-alt scrollup-icon"></i>
     </a>
     <!--=============== STYLE SWITCHER ===============-->
 
@@ -425,5 +415,6 @@
 
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
-  </body>
+</body>
+
 </html>
