@@ -166,7 +166,7 @@ function themeColors(){
         let path = colorStyle.getAttribute("href").split("/");
         path = path.slice(0, path.length - 1);
         colorStyle.setAttribute("href", path.join("/") + "/" + localStorage.getItem("color") + ".css");
-        // console.log(path);
+        
         if(document.querySelector(".js-theme-color-item.active")){
             document.querySelector(".js-theme-color-item.active").classList.remove("active");
         }
@@ -178,7 +178,6 @@ function themeColors(){
     else{
         const defaultColor = colorStyle.getAttribute("href").split("/").pop().split(".").shift();
         document.querySelector("[data-js-theme-color" + defaultColor + "]").classList.add("active");
-        // console.log(defaultColor)
     }
 }
 
