@@ -1,40 +1,37 @@
 # Chrome-eletronics
 
-´´´html
+[Live Demo]()
+
+##  :computer: Technologies
+
+- [x] HTML
+- [x] CSS
+- [x] JAVASCRIPT
 
 
+##  Future Features
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+- Home (List products)
+- Detail products
+- Product category
+- Recommended products
+- Cart
+- Login / Register
 
-<a 
-    href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" 
-    style="position:fixed;
-            width:60px;
-            height:60px;
-            bottom:40px;
-            right:40px;
-            background-color:#25d366;
-            color:#FFF;
-            border-radius:50px;
-            text-align:center;
-            font-size:30px;
-            box-shadow: 1px 1px 2px #888;
-            z-index:1000;"
-     target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
-</a>
-´´´
+# ScreenShot
+
+<ul>
+<img src="assets/image/img-tumb-readme/img-01.png">
+<img src="assets/image/img-tumb-readme/img-02.png">
+<img src="assets/image/img-tumb-readme/img-03.png">
+<img src="assets/image/img-tumb-readme/img-04.png">
+<img src="assets/image/img-tumb-readme/img-05.png">
+</ul>
 
 
-```html
+# :closed_book: License
 
-<div class="footer__social">
+Released in 2020.
+This project is under the [MIT license](./LICENSE).
 
-    <a href="https://www.facebook.com/" class="footer__social-link" target="_blank"><i class="bx bxl-facebook"></i></a>
-    <a href="https://www.instagram.com/" class="footer__social-link" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-    <a href="https://twitter.com/" class="footer__social-link" target="_blank"><i class="bx bxl-twitter"></i></a>
-    <a href="https://web.whatsapp.com/" class="footer__social-link" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-</div>
-```
-
-
+Made with love by [IvanC_Dev](https://github.com/ivandacruz) 🚀
