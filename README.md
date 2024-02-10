@@ -31,7 +31,7 @@
 
 # :closed_book: License
 
-Released in 2020.
+Released in 2024.
 This project is under the [MIT license](./LICENSE).
 
 Made with love by [IvanC_Dev](https://github.com/ivandacruz) 🚀
